@@ -1,0 +1,23 @@
+{
+    "required": true,
+    "package": "me.memencio.asynccatcherfabric.mixin",
+    "compatibilityLevel": "JAVA_21",
+    "mixins": [
+        "BaseCommandBlockMixin",
+        "BlockBehaviourMixin",
+        "ChunkMapMixin",
+        "ChunkMapMixin$TrackedEntityMixin",
+        "DistanceManagerMixin",
+        "PersistentEntitySectionManagerMixin",
+        "PersistentEntitySectionManagerMixin$CallbackMixin",
+        "ServerGamePacketListenerImplMixin",
+        "ServerLevelMixin",
+        "ServerLevelMixin$EntityCallbacksMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    },
+    "overwrites": {
+        "requireAnnotations": true
+    }
+}

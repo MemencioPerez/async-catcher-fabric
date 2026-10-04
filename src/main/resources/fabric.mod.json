@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "async-catcher-fabric",
+	"version": "${version}",
+	"name": "Async-Catcher-Fabric",
+	"description": "A Fabric port of Paper's AsyncCatcher to detect and block unsafe asynchronous calls in mods.",
+	"authors": [
+		{
+			"name": "MemencioPerez",
+			"contact": {
+				"discord": "https://discord.com/users/818718877257170954"
+			}
+		}
+	],
+	"contact": {
+		"issues": "https://github.com/MemencioPerez/async-catcher-fabric/issues",
+		"sources": "https://github.com/MemencioPerez/async-catcher-fabric"
+	},
+	"license": "GPL-3.0-or-later",
+	"environment": "server",
+	"entrypoints": {
+		"main": [
+			"me.memencio.asynccatcherfabric.AsyncCatcherFabric"
+		]
+	},
+	"mixins": [
+		"async-catcher-fabric.mixins.json"
+	],
+    "accessWidener": "async-catcher-fabric.accesswidener",
+	"depends": {
+		"fabricloader": "*",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
