@@ -4,7 +4,7 @@ A port of PaperMC's AsyncCatcher mechanism to Fabric, preventing asynchronous th
 
 ## 📌 Overview
 
-In the Minecraft server ecosystem (especially Bukkit/Spigot/Paper), **AsyncCatcher** is a critical internal tool designed to intercept unsafe operations executed from secondary, asynchronous threads. This mod ports that exact protection layer to **Fabric**, allowing server administrators and mod developers to catch race conditions and thread-unsafe modifications before they cause silent world corruption or hard-to-debug server crashes.
+In the **Spigot and PaperMC** server ecosystem (including their various forks), **AsyncCatcher** is a critical internal tool designed to intercept unsafe operations executed from secondary, asynchronous threads. This mod ports that exact protection layer to **Fabric**, allowing server administrators and mod developers to catch race conditions and thread-unsafe modifications before they cause silent world corruption or hard-to-debug server crashes.
 
 By default, this mod strictly **blocks** unsafe async calls, forcing the server to throw an `IllegalStateException` immediately when an invalid operation is detected outside the main server thread. This prevents race conditions and ConcurrentModificationExceptions (CME), ensuring the absolute integrity of your running server state.
 
